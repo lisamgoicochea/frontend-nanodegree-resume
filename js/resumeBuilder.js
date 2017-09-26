@@ -14,6 +14,7 @@ var bio = {
  skills: [
  	"HTML", 'CSS', 'JavaScript'],
  	bioPic: 'images/me.jpg'
+ 	}
  	display: function() {
  		var formattedName = HTMLheaderName.replace(DATA, bio.name);
  		var formattedRole = HTMLheaderRole.replace(DATA, bio.role);
@@ -42,8 +43,7 @@ var bio = {
  				$('#skills').append(formattedSkills);
  			}
  		}
- 	}
-};
+ 	};
 
 var work = {
  	jobs: [
