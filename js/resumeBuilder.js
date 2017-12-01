@@ -14,8 +14,10 @@ var bio = {
  skills: [
  	"HTML", 'CSS', 'JavaScript'],
  	bioPic: 'images/me.jpg'
- 	}
- 	display: function() {
+ 	};
+
+ 	bio.display = function() {
+ 		var name = "Lisa Marie Goicochea";
  		var formattedName = HTMLheaderName.replace(DATA, bio.name);
  		var formattedRole = HTMLheaderRole.replace(DATA, bio.role);
 
@@ -50,8 +52,8 @@ var work = {
  	{
  		employer: 'Self Employed',
  		title: 'Entrepreneur',
- 		dates: 'August 2016 - Future'
- 		description: 'fill this in later'
+ 		dates: 'May 2016 - Future'
+ 		description: 'Working Hard While Hardly Working' 
  	},
  	{
  		employer: "Lerner Cumbo and Associates",
