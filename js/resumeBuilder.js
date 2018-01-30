@@ -61,7 +61,8 @@ var work = {
  		"dates": "October 2015 - August 2016",
  		"description": "fill this in later"
  	}
- ],
+ };
+
  display: funtion() {
  	if (work.jobs.length > 0) {
  		for (var i = 0, len = work.jobs.length; i < len; i++) {
@@ -129,6 +130,7 @@ display:  function() {
 		}
 	]
 };
+
 display: function () {
 	if (education.schools.length > 0 || education.onlineCourses.length > 0) {
 		for (var i = 0, iLen = education.schools.length; i < iLen; i++) {
