@@ -52,8 +52,8 @@ var work = {
  	{
  		employer: 'Self Employed',
  		title: 'Entrepreneur',
- 		dates: 'May 2016 - Future'
- 		description: 'Working Hard While Hardly Working' 
+ 		dates: 'May 2016 - Future',
+ 		description: 'Working Hard While Hardly Working', 
  	},
  	{
  		employer: "Lerner Cumbo and Associates",
