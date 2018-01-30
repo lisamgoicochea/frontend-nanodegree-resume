@@ -61,9 +61,9 @@ var work = {
  		"dates": "October 2015 - August 2016",
  		"description": "fill this in later"
  	}
- };
+ ];
 
- display: funtion() {
+ "display" funtion() {
  	if (work.jobs.length > 0) {
  		for (var i = 0, len = work.jobs.length; i < len; i++) {
  			var formattedEmployer = HTMLworkEmployer.replace(DATA, work.jobs[i].employer);
@@ -96,7 +96,7 @@ var projects = {
 		}
 	]
 };
-display:  function() {
+"display":  function() {
 	if (projects.projects.length > 0) {
 		for (var i = 0, iLen = projects.projects.length; i < iLen; i++) {
 			var formattedTitle = HTMLprojectTitle.replace(DATA, projects.projects[i].title);
@@ -131,7 +131,7 @@ display:  function() {
 	]
 };
 
-display: function () {
+"display": function () {
 	if (education.schools.length > 0 || education.onlineCourses.length > 0) {
 		for (var i = 0, iLen = education.schools.length; i < iLen; i++) {
 			var formattedName = HTMLschoolName.replace(DATA, education.schools[i].name);
