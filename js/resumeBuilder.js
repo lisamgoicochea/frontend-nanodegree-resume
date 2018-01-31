@@ -65,7 +65,7 @@ var work = {
  		}
 	],
 
-	display: function() {
+	work.display = function() {
 		if (work.jobs.length > 0) {
 			for (var i = 0, len = work.jobs.length; i < len; i++) {
 				var formattedEmployer = HTMLworkEmployer.replace(DATA, work.jobs[i].employer);
@@ -98,14 +98,24 @@ var projects = {
 		}
 	],
 
-	display:  function() {
+	projects.display = function() {
 		if (projects.projects.length > 0) {
-			for (var i = 0, iLen = projects.projects.length; i < iLen; i++) {
-				var formattedTitle = HTMLprojectTitle.replace(DATA, projects.projects[i].title);
-				var formattedDates = HTMLprojectTitle.replace(DATA, projects.projects[i].dates);
-				var formattedDescription = HTMLprojectDescription.replace(DATA, projects.projects[i].description);
-			}
-		}
+      $("#projects").append(HTMLprojectStart);
+     
+			for (var i = 0; len = projects.projects.length < len; i++) {
+				var formattedProjectTitle = HTMLprojectTitle.replace(DATA, projects.projects[i].title).replace("#", projects.projects[p].url);
+				var formattedProjectDates = HTMLprojectTitle.replace(DATA, projects.projects[i].dates);
+				var formattedProjectDescription = HTMLprojectDescription.replace(DATA, projects.projects[i].description);
+		}	}
+
+				$(".project-entry:last").append(formattedProjectTitle);
+				$(".project-entry:last").append(formattedProjectDates);
+				$(".project-entry:last").append(formattedProjectDescription);
+
+					for (var img in projects.projects[p].images) {
+						var formattedProjectImage = HTMLprojectImage.replace(data, projects.projects[p].images[img]);
+						$("project-entry").append(formattedHTMLprojectImage);
+					}
 	}
 };
 
@@ -137,7 +147,7 @@ var projects = {
 	],
 
 
-	display: function () {
+	education.display = function () {
 		if (education.schools.length > 0 || education.onlineCourses.length > 0) {
 			for (var i = 0, iLen = education.schools.length; i < iLen; i++) {
 				var formattedName = HTMLschoolName.replace(DATA, education.schools[i].name);
