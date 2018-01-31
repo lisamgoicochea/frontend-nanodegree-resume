@@ -8,12 +8,12 @@ var bio = {
  		email: 'lisamgoicochea@gmail.com',
  		github: 'lisamgoicochea',
  		twitter: '@lisamgoicochea',
- 		location: 'New, York, New York'
+ 		location: 'New, York, New York, US',
  },
  welcomeMessage: 'lorem ipsum dolor sit amet etc etc etc.',
  skills: [
  	"HTML", 'CSS', 'JavaScript'],
- 	bioPic: 'images/winterselfie.jpg'
+ 	bioPic: 'images/winterselfie.jpg',
  	};
 
  	bio.display = function() {
@@ -130,7 +130,7 @@ var projects = {
 		title: 'JavaScript Crash Course',
 		school: 'Udacity',
 		dates: '2017-2018',
-		url: 'http://www.udacity.com/course/ud804'
+		url: 'http://www.udacity.com/course/ud804',
 		}
 	],
 
