@@ -116,13 +116,15 @@ var projects = {
 		name: 'LaGuardia Community College',
 		location: 'Long Island City, NY, US',
 		degree: 'AA',
-		major: ['Mass Communications', 'Human Services']
+		major: ['Mass Communications', 'Human Services'],
+    dates: ['2011-2015'],
 	},
 	{
 		name: 'Frank Sinatra School of the Arts',
 		location: 'Long Island City, NY, US',
 		degree: 'High School Diploma',
-		major: ['Vocal']
+		major: ['Vocal'],
+    dates: ['2008-2011'],
 		}
 	],
 	onlineCourses: [
