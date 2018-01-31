@@ -64,7 +64,7 @@ var work = {
 	]
 };
 
- "display" funtion() {
+ "display": funtion() {
  	if (work.jobs.length > 0) {
  		for (var i = 0, len = work.jobs.length; i < len; i++) {
  			var formattedEmployer = HTMLworkEmployer.replace(DATA, work.jobs[i].employer);
