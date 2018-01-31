@@ -49,19 +49,20 @@ var bio = {
 
 var work = {
  	jobs: [
- 	{
- 		employer: 'Self Employed',
- 		title: 'Entrepreneur',
- 		dates: 'May 2016 - Future',
- 		description: 'Working Hard While Hardly Working', 
- 	},
- 	{
- 		employer: "Lerner Cumbo and Associates",
- 		"title": "Placement Counselor",
- 		"dates": "October 2015 - August 2016",
- 		"description": "fill this in later"
- 	}
- ];
+ 		{
+ 			employer: 'Self Employed',
+ 			title: 'Entrepreneur',
+ 			dates: 'May 2016 - Future',
+ 			description: 'Working Hard While Hardly Working', 
+ 		},
+ 		{
+ 			employer: "Lerner Cumbo and Associates",
+ 			"title": "Placement Counselor",
+ 			"dates": "October 2015 - August 2016",
+ 			"description": "fill this in later"
+ 		}
+	]
+};
 
  "display" funtion() {
  	if (work.jobs.length > 0) {
