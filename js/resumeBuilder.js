@@ -3,17 +3,17 @@ var DATA = '%data%';
 var bio = {
  	name: 'Lisa Marie Goicochea',
  	role: 'Front End Ninja',
- 	contacts: { 
+ 	contacts: {
  		mobile: '*** *** ****',
  		email: 'lisamgoicochea@gmail.com',
  		github: 'lisamgoicochea',
  		twitter: '@lisamgoicochea',
- 		location: 'New York, New York'
+ 		location: 'New, York, New York'
  },
  welcomeMessage: 'lorem ipsum dolor sit amet etc etc etc.',
  skills: [
  	"HTML", 'CSS', 'JavaScript'],
- 	bioPic: 'images/winterselfie.jpg',
+ 	bioPic: 'images/winterselfie.jpg'
  	};
 
  	bio.display = function() {
@@ -31,7 +31,7 @@ var bio = {
  		var formattedWelcomeMessage = HTMLwelcomeMsg.replace(DATA, bio.welcomeMessage);
 
  		$('#header').prepend(formattedName + formattedRole);
- 		$('#topContacts', '#footerContacts').append(formattedMobile + formattedEmail + 
+ 		$('#topContacts', '#footerContacts').append(formattedMobile + formattedEmail +
  			formattedGithub + formattedTwitter + formattedLocation);
  		$('#header').append(formattedBioPic);
  		$('#header').append(formattedWelcomeMessage);
@@ -52,20 +52,20 @@ var work = {
  		{
  			employer: 'Self Employed',
  			title: 'Entrepreneur',
-			dates: 'May 2016 - Future',
-			location: 'Chicago, Illinois',
- 			description: 'Working Hard While Hardly Working', 
+ 			dates: 'May 2016 - Future',
+      location: 'Chicago, Illinois',
+ 			description: 'Working Hard While Hardly Working',
  		},
  		{
  			employer: "Lerner Cumbo and Associates",
  			title: "Placement Counselor",
-			 dates: "October 2015 - August 2016",
-			 location: 'Los Angeles, California',
- 			description: 'Graciously place candidates in roles they qualify for',
- 		};
-	];
+ 			dates: "October 2015 - August 2016",
+      location: 'Los Angeles, California',
+ 			description: "Graciously place candidates in roles they qualify for",
+ 		}
+	],
 
-	"display": function() {
+	display: function() {
 		if (work.jobs.length > 0) {
 			for (var i = 0, len = work.jobs.length; i < len; i++) {
 				var formattedEmployer = HTMLworkEmployer.replace(DATA, work.jobs[i].employer);
@@ -88,17 +88,17 @@ var work = {
 var projects = {
 	projects: [
 		{
-			title: 'Princess Run: Classic Arcade Game',
-			dates: "2018",
-			description: "Get the Princess from one side to the other without bumping into any enemy bugs!",
+			title: 'Sample Project 1',
+			dates: "2014",
+			description: "fill this in later",
 			images: [
-			"insert image here", 
+			"insert image here",
 			"insert another image here"
 			]
 		}
 	],
 
-	"display":  function() {
+	display:  function() {
 		if (projects.projects.length > 0) {
 			for (var i = 0, iLen = projects.projects.length; i < iLen; i++) {
 				var formattedTitle = HTMLprojectTitle.replace(DATA, projects.projects[i].title);
@@ -107,20 +107,20 @@ var projects = {
 			}
 		}
 	}
-};	
+};
 
 
  var education = {
 	schools: [
 	{
 		name: 'LaGuardia Community College',
-		city: 'Long Island City, NY, US',
+		location: 'Long Island City, NY, US',
 		degree: 'AA',
 		major: ['Mass Communications', 'Human Services']
 	},
 	{
 		name: 'Frank Sinatra School of the Arts',
-		city: 'Long Island City, NY, US',
+		location: 'Long Island City, NY, US',
 		degree: 'High School Diploma',
 		major: ['Vocal']
 		}
@@ -129,13 +129,13 @@ var projects = {
 	{
 		title: 'JavaScript Crash Course',
 		school: 'Udacity',
-		dates: '2017',
+		dates: '2017-2018',
 		url: 'http://www.udacity.com/course/ud804'
 		}
 	],
 
 
-	"display": function () {
+	display: function () {
 		if (education.schools.length > 0 || education.onlineCourses.length > 0) {
 			for (var i = 0, iLen = education.schools.length; i < iLen; i++) {
 				var formattedName = HTMLschoolName.replace(DATA, education.schools[i].name);
