@@ -53,14 +53,14 @@ var work = {
  			employer: 'Self Employed',
  			title: 'Entrepreneur',
  			dates: 'May 2016 - Future',
-      location: 'Chicago, Illinois',
+      		location: 'Chicago, Illinois',
  			description: 'Working Hard While Hardly Working',
  		},
  		{
  			employer: "Lerner Cumbo and Associates",
  			title: "Placement Counselor",
  			dates: "October 2015 - August 2016",
-      location: 'Los Angeles, California',
+      		location: 'Los Angeles, California',
  			description: "Graciously place candidates in roles they qualify for",
  		}
 	],
@@ -88,12 +88,12 @@ var work = {
 var projects = {
 	projects: [
 		{
-			title: 'Sample Project 1',
-			dates: "2014",
-			description: "fill this in later",
+			title: 'Princess Run: Classic Arcade Game',
+			dates: "2017",
+			description: "Get the princess to the other side without bumping into enemy bugs!",
 			images: [
-			"insert image here",
-			"insert another image here"
+			'images/soloprincess.png',
+			'images/gamesnapshot.png',
 			]
 		}
 	],
