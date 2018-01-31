@@ -27,7 +27,7 @@ var bio = {
  		var formattedTwitter = HTMLtwitter.replace(DATA, bio.contacts.twitter);
  		var formattedLocation = HTMLlocation.replace(DATA, bio.contacts.location);
 
- 		var formattedBioPic = HTMLbioPic.replace(DATA, bio.biopic);
+ 		var formattedBioPic = HTMLbioPic.replace(DATA, bio.bioPic);
  		var formattedWelcomeMessage = HTMLwelcomeMsg.replace(DATA, bio.welcomeMessage);
 
  		$('#header').prepend(formattedName + formattedRole);
