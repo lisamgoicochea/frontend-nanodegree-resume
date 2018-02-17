@@ -1,4 +1,19 @@
-var DATA = '%data%';
+// Hello.
+//
+// This is JSHint, a tool that helps to detect errors and potential
+// problems in your JavaScript code.
+//
+// To start, simply enter some JavaScript anywhere on this page. Your
+// report will appear on the right side.
+//
+// Additionally, you can toggle specific options in the Configure
+// menu.
+
+function main() {
+  return 'Hello, World!';
+}
+
+main();var DATA = '%data%';
 
 var bio = {
  	name: 'Lisa Marie Goicochea',
@@ -11,10 +26,9 @@ var bio = {
  		location: 'New, York, New York, US',
  	},
  	welcomeMessage: 'lorem ipsum dolor sit amet etc etc etc.',
-	skills: ["HTML", 'CSS', 'JavaScript'],
- 	bioPic: 'images/winterselfie.jpg',
+	skills: ['HTML', 'CSS', 'JavaScript'],
+ 	biopic: 'images/winterselfie.jpg',
  	display: function() {
- 		var name = "Lisa Marie Goicochea";
  		var formattedName = HTMLheaderName.replace(DATA, bio.name);
  		var formattedRole = HTMLheaderRole.replace(DATA, bio.role);
 
@@ -24,11 +38,11 @@ var bio = {
  		var formattedTwitter = HTMLtwitter.replace(DATA, bio.contacts.twitter);
  		var formattedLocation = HTMLlocation.replace(DATA, bio.contacts.location);
 
- 		var formattedBioPic = HTMLbioPic.replace(DATA, bio.bioPic);
+ 		var formattedBioPic = HTMLbioPic.replace(DATA, bio.biopic);
  		var formattedWelcomeMessage = HTMLwelcomeMsg.replace(DATA, bio.welcomeMessage);
 
  		$('#header').prepend(formattedName + formattedRole);
- 		$('#topContacts', '#footerContacts').append(formattedMobile + formattedEmail +
+ 		$('#topContacts, #footerContacts').append(formattedMobile + formattedEmail +
  			formattedGithub + formattedTwitter + formattedLocation);
  		$('#header').append(formattedBioPic);
  		$('#header').append(formattedWelcomeMessage);
@@ -58,8 +72,8 @@ var work = {
  			employer: "Lerner Cumbo and Associates",
  			title: "Placement Counselor",
  			dates: "October 2015 - August 2016",
-      		location: 'Los Angeles, California',
- 			description: "Graciously place candidates in roles they qualify for",
+      location: 'Los Angeles, California',
+ 			description: 'Graciously place candidates in roles they qualify for',
  		}
 	],
 
@@ -99,7 +113,7 @@ var projects = {
 	display: function() {
 		if (projects.projects.length > 0) {
 			$("#projects").append(HTMLprojectStart);
-     
+
 			for (var i = 0; i < projects.projects.length; i++) {
 				var formattedProjectTitle = HTMLprojectTitle.replace(DATA, projects.projects[i].title);
 				var formattedProjectDates = HTMLprojectTitle.replace(DATA, projects.projects[i].dates);
@@ -125,15 +139,16 @@ var projects = {
 		name: 'LaGuardia Community College',
 		location: 'Long Island City, NY, US',
 		degree: 'AA',
-		major: ['Mass Communications', 'Human Services'],
-    dates: ['2011-2015'],
+		major: 'Mass Communications',
+    dates: '2011-2015',
 	},
 	{
 		name: 'Frank Sinatra School of the Arts',
 		location: 'Long Island City, NY, US',
 		degree: 'High School Diploma',
-		major: ['Vocal'],
-    dates: ['2008-2011'],
+		major: 'Vocal',
+    dates: '2008-2011',
+    url: 'http://franksinatraschoolofthearts.org/',
 		}
 	],
 	onlineCourses: [
@@ -148,7 +163,7 @@ var projects = {
 
 	display: function () {
 		if (education.schools.length > 0 || education.onlineCourses.length > 0) {
-			for (var i = 0, iLen = education.schools.length; i < iLen; i++) {
+			for (var i = 0; i < education.schools.length; i++) {
 				var formattedName = HTMLschoolName.replace(DATA, education.schools[i].name);
 				var formattedDegree = HTMLschoolDegree.replace(DATA, education.schools[i].degree);
 				var formattedSchoolDates = HTMLschoolDates.replace(DATA, education.schools[i].dates);
@@ -163,7 +178,7 @@ var projects = {
 				for (var j = 0, jLen = education.schools[i].major.length; j < jLen; j++) {
 					var formattedMajor = HTMLschoolMajor.replace(DATA, education.schools[i].major[j]);
 
-				$('#education-entry:last').append(formattedMajor);
+				$('.education-entry:last').append(formattedMajor);
 				}
 			}
 

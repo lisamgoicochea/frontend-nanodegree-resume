@@ -11,7 +11,7 @@ h5,
 h6 {
   padding: 0;
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Playfair Display', sans-serif;
 }
 
 .clear-fix {
@@ -127,9 +127,8 @@ a {
   background-color: #4a4a4a;
 }
 
-/* TODO: Replace with image later */
 #header {
-  background-color: #484848;
+  background-color: #342654;
 }
 
 .flex-box {
