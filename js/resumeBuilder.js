@@ -9,10 +9,6 @@
 // Additionally, you can toggle specific options in the Configure
 // menu.
 
-function main() {
-  return 'Hello, World!';
-}
-
 main();var DATA = '%data%';
 
 var bio = {
@@ -139,14 +135,14 @@ var projects = {
 		name: 'LaGuardia Community College',
 		location: 'Long Island City, NY, US',
 		degree: 'AA',
-		major: 'Mass Communications',
+		majors: ['Mass Communications', 'Human Services'],
     dates: '2011-2015',
 	},
 	{
 		name: 'Frank Sinatra School of the Arts',
 		location: 'Long Island City, NY, US',
 		degree: 'High School Diploma',
-		major: 'Vocal',
+		majors: ['Vocal'],
     dates: '2008-2011',
     url: 'http://franksinatraschoolofthearts.org/',
 		}
@@ -174,9 +170,9 @@ var projects = {
 				$('.education-entry:last').append(formattedNameDegree);
 				$('.education-entry:last').append(formattedSchoolDates);
 				$('.education-entry:last').append(formattedLocation);
+        $('.education-entry:last').append(HTMLschoolMajor.replace(DATA, education.schools[i].major));
 
-				for (var j = 0, jLen = education.schools[i].major.length; j < jLen; j++) {
-					var formattedMajor = HTMLschoolMajor.replace(DATA, education.schools[i].major[j]);
+          var formattedMajor = HTMLschoolMajor.replace(DATA, education.schools[i].major[j]);
 
 				$('.education-entry:last').append(formattedMajor);
 				}
