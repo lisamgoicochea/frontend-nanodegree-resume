@@ -175,7 +175,7 @@ var projects = {
 				var formattedOnlineDates = HTMLonlineDates.replace(DATA, education.onlineCourses[k].dates);
 			}
 		}
-	}
+	};
  };
 
 bio.display();
