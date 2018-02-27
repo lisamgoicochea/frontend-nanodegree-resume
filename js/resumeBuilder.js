@@ -1,15 +1,4 @@
-// Hello.
-//
-// This is JSHint, a tool that helps to detect errors and potential
-// problems in your JavaScript code.
-//
-// To start, simply enter some JavaScript anywhere on this page. Your
-// report will appear on the right side.
-//
-// Additionally, you can toggle specific options in the Configure
-// menu.
-
-main();var DATA = '%data%';
+var DATA = '%data%';
 
 var bio = {
  	name: 'Lisa Marie Goicochea',
@@ -61,7 +50,7 @@ var work = {
  			employer: 'Self Employed',
  			title: 'Entrepreneur',
  			dates: 'May 2016 - Future',
-      		location: 'Chicago, Illinois',
+      location: 'Chicago, Illinois',
  			description: 'Working Hard While Hardly Working',
  		},
  		{
@@ -172,7 +161,7 @@ var projects = {
 				$('.education-entry:last').append(formattedLocation);
         $('.education-entry:last').append(HTMLschoolMajor.replace(DATA, education.schools[i].major));
 
-          var formattedMajor = HTMLschoolMajor.replace(DATA, education.schools[i].major[j]);
+          var formattedMajor = HTMLschoolMajor.replace(DATA, education.schools[i].major[i]);
 
 				$('.education-entry:last').append(formattedMajor);
 				}
